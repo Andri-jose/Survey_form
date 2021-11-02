@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header class="title_container">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Thanks for you visiting our website, you have been selected to participate in a brief
+            custumer sastisfation</p>
+    </header>
+    <section class="survey_container">
+        <form action="" id="survey-form">
+            <div class="name_container">
+                <label for="name" id="name-label">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+            </div>
+            <div class="email_container">
+                <label for="email" id="email-label">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+            <div class="number_container">
+                <label for="number" id="number-label">Age: (optional)</label>
+                <input type="number" id="number" name="date" required placeholder="age"  min="10" max="100">
+            </div>
+            <div class="course_container">
+                <label for="dropdown" class="course_title">Select course your are currently taking</label>
+                <select id="dropdown" name="dropdown"> 
+                    <option value="" disabled selected>Select a course</option>
+                    <option value="Javascript">Javascript</option>
+                    <option value="Python">Python</option>
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JAVA">JAVA</option>
+                    <option value="C++">C++</option>
+                </select>
+            </div>
+            <div class="recommend_container">
+                <label for="suggest" class="recommend_title">Would you recomend our website to a friend?</label>
+                <div class="recommend_form">
+                    <div>
+                        <input type="radio" id="suggest" name="recomend" value="definitely">
+                        <label for="suggest" id="suggest">Definitely</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="suggest" name="recomend" value="maybe">
+                        <label for="suggest" id="suggest">Maybe</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="suggest" name="recomend" value="not_sure">
+                        <label for="suggest" id="suggest">Not sure</label>
+                    </div>
+                </div>
+            </div>
+            <div class="service_container">
+                <label for="service" class="service_title">What is your favorite service of our website</label>
+                <select id="service" name="favorite">
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="courses">Courses</option>
+                    <option value="practices">Practices</option>
+                    <option value="consultancies">Consultancies</option>
+                </select>   
+            </div>
+            <div class="improve_container">
+                <label for="improved" class="improve_title">What would you like to see improved?</label>
+                <div class="improve_form">
+                    <div class="improve_input">
+                        <input type="checkbox" id="improved" name="improved" value="courses">
+                        <label for="improved" id="improved">Courses</label>
+                    </div>
+                    <div class="improve_input">
+                        <input type="checkbox" id="improved" name="improved" value="challenges">
+                        <label for="improved" id="improved">Challenges</label>
+                    </div>
+                    
+                    <div class="improve_input">
+                        <input type="checkbox" id="improved" name="improved" value="Videos">
+                        <label for="improved" id="improved">Videos</label>
+                    </div>
+                    <div class="improve_input">
+                        <input type="checkbox" id="improved" name="improved" value="forums">
+                        <label for="improved" id="improved">Forums</label>
+                    </div>
+                    <div class="improve_input">
+                        <input type="checkbox" id="improved" name="improved" value="additional_courses">
+                        <label for="improved" id="improved">Additional Courses</label>
+                    </div>
+                </div>
+            </div>
+            <div class="comment_container">
+                <label for="comment" class="comment_title">Any comment or suggestion?</label>
+                <textarea id="comment" name="comment" class="comment_text" placeholder="Enter your comment here...."></textarea>
+            </div>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </section>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
